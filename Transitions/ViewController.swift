@@ -21,5 +21,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func changeScreens(sender :UIButton)
+    {
+        performSegueWithIdentifier("toUpdatedScreen", sender: sender)
+    }
 }
 
