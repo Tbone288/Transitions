@@ -18,13 +18,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqC-WW-exS">
-                                <rect key="frame" x="209" y="285" width="183" height="30"/>
-                                <state key="normal" title="Click to change the screen"/>
+                                <rect key="frame" x="209" y="512" width="183" height="30"/>
+                                <state key="normal" title="Next Screen"/>
                                 <connections>
                                     <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jda-wh-9cB"/>
                                     <segue destination="pId-ZT-Zfo" kind="show" identifier="toUpdatedScreen" id="BAk-EY-PSR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cS-E1-Etj">
+                                <rect key="frame" x="231" y="67" width="138" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -62,12 +68,28 @@
                     <view key="view" contentMode="scaleToFill" id="jPh-9X-Lpc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blurry-Purple-Light" translatesAutoresizingMaskIntoConstraints="NO" id="H4v-AM-NV4">
+                                <rect key="frame" x="180" y="93" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mountain wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="XY2-X6-TPP">
+                                <rect key="frame" x="180" y="285" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.78358039626103038" green="0.97691900570603274" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomImage" destination="XY2-X6-TPP" id="c5m-33-o0S"/>
+                        <outlet property="topImage" destination="H4v-AM-NV4" id="pb6-fq-7hG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jDb-pb-IR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="874" y="-605"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Blurry-Purple-Light" width="2560" height="1600"/>
+        <image name="Mountain wallpaper" width="2560" height="1600"/>
+    </resources>
 </document>
