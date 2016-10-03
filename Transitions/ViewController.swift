@@ -23,7 +23,20 @@ class ViewController: UIViewController {
 
     @IBAction func changeScreens(sender :UIButton)
     {
-        performSegueWithIdentifier("toUpdatedScreen", sender: sender)
+        performSegueWithIdentifier("toLikesScreen", sender: sender)
+    }
+    @IBAction func dislikesButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("toDislikesScreen", sender: sender)
+        
+    }
+    @IBAction func familyScreen(sender: UIButton)
+    {
+        performSegueWithIdentifier("toFamilyScreen", sender: sender)
+    }
+    @IBAction func foodScreen(sender: UIButton)
+    {
+        performSegueWithIdentifier("toFoodScreen", sender: sender)
     }
 }
 

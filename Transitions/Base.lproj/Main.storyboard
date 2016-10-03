@@ -18,16 +18,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqC-WW-exS">
-                                <rect key="frame" x="209" y="512" width="183" height="30"/>
-                                <state key="normal" title="Next Screen"/>
+                                <rect key="frame" x="231" y="402" width="36" height="30"/>
+                                <state key="normal" title="Likes"/>
                                 <connections>
                                     <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jda-wh-9cB"/>
-                                    <segue destination="pId-ZT-Zfo" kind="show" identifier="toUpdatedScreen" id="BAk-EY-PSR"/>
+                                    <segue destination="pId-ZT-Zfo" kind="show" identifier="toLikesScreen" id="BAk-EY-PSR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxe-Qv-6d2">
+                                <rect key="frame" x="227" y="455" width="44" height="30"/>
+                                <state key="normal" title="Family"/>
+                                <connections>
+                                    <action selector="familyScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qrL-QB-h4v"/>
+                                    <segue destination="hZe-ba-DKH" kind="show" identifier="toFamilyScreen" id="6V6-1a-s4B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfR-bb-yJf">
+                                <rect key="frame" x="316" y="402" width="53" height="30"/>
+                                <state key="normal" title="Dislikes"/>
+                                <connections>
+                                    <action selector="dislikesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W8r-tJ-Y8r"/>
+                                    <segue destination="wmr-pb-KV2" kind="show" identifier="toDislikesScreen" id="nYu-0r-pgP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYi-bf-Ym3">
+                                <rect key="frame" x="325" y="455" width="35" height="30"/>
+                                <state key="normal" title="Food"/>
+                                <connections>
+                                    <action selector="foodScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Pz-Wm-8OH"/>
+                                    <segue destination="F6E-Fg-Mpo" kind="show" identifier="toFoodScreen" id="b76-3Q-WBE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cS-E1-Etj">
-                                <rect key="frame" x="231" y="67" width="138" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="204" y="51" width="193" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -50,12 +74,54 @@
                     <view key="view" contentMode="scaleToFill" id="5Mi-8S-eVN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dislikes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lp-qh-6jq">
+                                <rect key="frame" x="233" y="57" width="135" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lam-PN-HYQ">
+                                <rect key="frame" x="20" y="550" width="141" height="30"/>
+                                <state key="normal" title="Back to Main Screen"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.81802855280999331" blue="0.79180500602252946" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2r-Ue-5It" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="57"/>
+            <point key="canvasLocation" x="140" y="181"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CEc-Y7-aGc">
+            <objects>
+                <viewController id="F6E-Fg-Mpo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jtA-pI-SCc"/>
+                        <viewControllerLayoutGuide type="bottom" id="2U6-JN-W9x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RrW-gb-3XL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJJ-8N-fns">
+                                <rect key="frame" x="255" y="48" width="90" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQn-0Z-C3i">
+                                <rect key="frame" x="20" y="550" width="141" height="30"/>
+                                <state key="normal" title="Back to Main Screen"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNK-mJ-SEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="873"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="f8B-oh-W2K">
@@ -69,27 +135,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blurry-Purple-Light" translatesAutoresizingMaskIntoConstraints="NO" id="H4v-AM-NV4">
-                                <rect key="frame" x="180" y="93" width="240" height="128"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mountain wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="XY2-X6-TPP">
-                                <rect key="frame" x="180" y="285" width="240" height="128"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk6-ZR-i7T">
+                                <rect key="frame" x="266" y="50" width="91" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNH-dx-aom">
+                                <rect key="frame" x="20" y="550" width="141" height="30"/>
+                                <state key="normal" title="Back to Main Screen"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78358039626103038" green="0.97691900570603274" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <connections>
-                        <outlet property="bottomImage" destination="XY2-X6-TPP" id="c5m-33-o0S"/>
-                        <outlet property="topImage" destination="H4v-AM-NV4" id="pb6-fq-7hG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jDb-pb-IR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="874" y="-605"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="HlC-Xv-D4B">
+            <objects>
+                <viewController id="hZe-ba-DKH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uTd-aO-eoB"/>
+                        <viewControllerLayoutGuide type="bottom" id="0xd-8b-WGs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p5u-Ua-hqe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Family" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyT-Fk-vbx">
+                                <rect key="frame" x="243" y="46" width="114" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gid-qj-eaN">
+                                <rect key="frame" x="20" y="550" width="141" height="30"/>
+                                <state key="normal" title="Back to Main Screen"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IxM-lp-HcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="139"/>
+        </scene>
     </scenes>
-    <resources>
-        <image name="Blurry-Purple-Light" width="2560" height="1600"/>
-        <image name="Mountain wallpaper" width="2560" height="1600"/>
-    </resources>
 </document>
