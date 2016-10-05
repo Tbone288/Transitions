@@ -84,7 +84,17 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lam-PN-HYQ">
                                 <rect key="frame" x="20" y="550" width="141" height="30"/>
                                 <state key="normal" title="Back to Main Screen"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="toMainFromDislikes" id="3BC-Zg-pou"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="byD-PB-gs1">
+                                <rect key="frame" x="106" y="155" width="389" height="123"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">I don't enjoy being bored, but fortunately I don't get bored very easily. I like to always be doing something even if the thing i'm doing isn't very productive. While I don't hate school itself, I don't like waking up early each morning. I also dislike cold weather down in the valley. Besides skiing, I don't like anything about the winter season.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.81802855280999331" blue="0.79180500602252946" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -114,7 +124,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQn-0Z-C3i">
                                 <rect key="frame" x="20" y="550" width="141" height="30"/>
                                 <state key="normal" title="Back to Main Screen"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="toMainFromFood" id="smS-nu-qHS"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jAM-cX-9z3">
+                                <rect key="frame" x="180" y="138" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -136,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk6-ZR-i7T">
-                                <rect key="frame" x="266" y="50" width="91" height="48"/>
+                                <rect key="frame" x="255" y="50" width="91" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -144,7 +163,24 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNH-dx-aom">
                                 <rect key="frame" x="20" y="550" width="141" height="30"/>
                                 <state key="normal" title="Back to Main Screen"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="toMainFromLikes" id="Av8-Yb-015"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Uf7-fc-5Aj">
+                                <rect key="frame" x="117" y="432" width="367" height="99"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">During the winter I love to ski. My friends and I will go almost every weekend once the season starts up. I also enjoy playing lacrosse and basketball. During the spring and summer, I like to go on hikes at cool locations.</string>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FeK-Ol-m0V">
+                                <rect key="frame" x="117" y="127" width="367" height="134"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">I really enjoy hanging out with my friends and my family. With my friends, I like to do almost anything. Every weekend we will spend our time doing things like go to the highschool football games, camping overnight, hot tubbing, or watching movies. When i'm with my family, I like to watch tv shows, play computer games with my dad, or go on vacation.</string>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.78358039626103038" green="0.97691900570603274" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -174,6 +210,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gid-qj-eaN">
                                 <rect key="frame" x="20" y="550" width="141" height="30"/>
                                 <state key="normal" title="Back to Main Screen"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="toMainFromFamily" id="9gw-S4-muv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
@@ -184,4 +223,7 @@
             <point key="canvasLocation" x="874" y="139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Av8-Yb-015"/>
+    </inferredMetricsTieBreakers>
 </document>

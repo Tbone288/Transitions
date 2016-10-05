@@ -15,25 +15,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
     @IBAction func changeScreens(sender :UIButton)
     {
         performSegueWithIdentifier("toLikesScreen", sender: sender)
     }
+    
     @IBAction func dislikesButton(sender: UIButton)
     {
         performSegueWithIdentifier("toDislikesScreen", sender: sender)
-        
     }
+   
     @IBAction func familyScreen(sender: UIButton)
     {
         performSegueWithIdentifier("toFamilyScreen", sender: sender)
     }
+    
     @IBAction func foodScreen(sender: UIButton)
     {
         performSegueWithIdentifier("toFoodScreen", sender: sender)
