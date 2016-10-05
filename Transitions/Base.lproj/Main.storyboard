@@ -129,8 +129,9 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jAM-cX-9z3">
-                                <rect key="frame" x="180" y="138" width="240" height="128"/>
+                                <rect key="frame" x="77" y="138" width="447" height="151"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">I am a pretty picky eater. I like most fruits, grains, and meats, but I haven't found a single vegetable that I enjoy. This makes it harder for me to eat healthy. I basically live off of cereal  because I don't care enough to spend the time to make real meals each day. I also have a problem with skipping meals if i'm too busy doing something else. My family also doesn't care about "quality" food too much. While on vacation, for example, we are content just staying at home and making some pasta.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -174,6 +175,9 @@
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xkw-vK-1Az">
+                                <rect key="frame" x="180" y="276" width="240" height="128"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FeK-Ol-m0V">
                                 <rect key="frame" x="117" y="127" width="367" height="134"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -184,6 +188,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.78358039626103038" green="0.97691900570603274" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="likesImage" destination="Xkw-vK-1Az" id="Q4Y-PJ-bfS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jDb-pb-IR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,6 +221,23 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="toMainFromFamily" id="9gw-S4-muv"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tcV-5J-OkL">
+                                <rect key="frame" x="110" y="130" width="380" height="105"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">I have 6 members in my family. My parents, an older brother named Spencer, a younger brother named Ben, and the youngest member of the family - my sister Kathryn. Spencer just left on a mission to Brazil so right now there's only 5 of us. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TJ2-D3-hMY">
+                                <rect key="frame" x="110" y="408" width="380" height="108"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">We have lots of family here in Utah. My grandparents from each side along with all but about 3 aunts/uncles live here. We even live on the same street as some of my cousins and my grandma. Because of all the family here, family gatherings are always packed.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6y-gH-IKi">
+                                <rect key="frame" x="177" y="252" width="247" height="141"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

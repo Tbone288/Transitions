@@ -11,6 +11,7 @@ import UIKit
 
 class UpdatedViewController : UIViewController
 {
+    @IBOutlet weak var likesImage: UIImageView!
    
 }
 
